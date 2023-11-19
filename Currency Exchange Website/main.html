@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1>Currency Exchange</h1>
+    </header>
+
+    <div class="explanation-box">
+        <p>This currency exchange tool allows you to quickly and easily convert between different currencies, helping you with your financial transactions and travel plans.</p>
+
+        <p>Please choose a currency from the list provided and specify the amounts you'd like to exchange in order to calculate the corresponding exchange rate. </p>
+    </div>
+
+    <div class="exchange-container">
+        <div class="currency-input">
+            <select id="from-currency" class="currency-select">
+                <!-- JavaScript will provide currency options here -->
+            </select>
+            <input type="number" id="amount-from" class="amount-input" placeholder="0" value="1" />
+        </div>
+    
+        <div class="swap-container">
+            <button class="btn" id="swap">Swap</button>
+            <div class="exchange-rate" id="rate"></div>
+        </div>
+    
+        <div class="currency-input">
+            <select id="to-currency" class="currency-select">
+                <!-- JavaScript will provide currency options here -->
+            </select>
+            <input type="number" id="amount-to" class="amount-input" placeholder="0" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
